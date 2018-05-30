@@ -31,7 +31,7 @@ end
 #   its('output') { should match 'connected' }
 # end
 
-sql = postgres_session('database_user', 'password', '127.0.0.1')
+sql = postgres_session('database_user', 'user_password', 'localhost')
 describe sql.query('\conninfo', ['roux']) do
   its('output') { should match 'connected' }
 end
