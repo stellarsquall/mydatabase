@@ -23,4 +23,4 @@ host    all             all             ::1/128                 md5
 # postgresql host superuser
 host    all             postgres        127.0.0.1/32            md5
 # a database local superuser
-host    all             <%=@database_user%>      127.0.0.1/32            ident
+host    all             <%=@database_user%>      127.0.0.1/32            md5
