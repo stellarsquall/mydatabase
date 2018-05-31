@@ -18,7 +18,7 @@ execute "createdb roux" do
 end
 
 template '/etc/postgresql/9.5/main/pg_hba.conf' do
-  source "pg_hba.erb"
+  source "pg_hba_ubuntu.erb"
   variables(
   	database_user: 'database_user'
   )
